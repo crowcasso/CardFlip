@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         matchGame.flipCard(which)
         imageViews[which].image = matchGame.getCardImage(which)
         
-        // update the flip lable
+        // update the flip label
         flipsLabel.text = "Flips: \(matchGame.flips)"
     }
 
