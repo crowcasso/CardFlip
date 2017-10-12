@@ -1,6 +1,6 @@
 //
 //  Deck.swift
-//  ThreeCards
+//  CardFlip
 //
 //  Created by Joel Hollingsworth on 9/27/17.
 //  Copyright © 2017 Joel Hollingsworth. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  Card.swift
-//  ThreeCards
+//  CardFlip
 //
 //  Created by Joel Hollingsworth on 9/25/17.
 //  Copyright © 2017 Joel Hollingsworth. All rights reserved.
@@ -17,9 +17,10 @@ class Card {
     enum CardState {
         case up
         case down
+        case matched
     }
     
-    var state = CardState.up
+    var state = CardState.down
     
     var upImage: UIImage
     var downImage = #imageLiteral(resourceName: "back")
@@ -38,11 +39,12 @@ class Card {
     
     // the current image based on the card state
     func getCurrentImage() -> UIImage {
-        if state == .up {
-            return upImage
+        if state == .down {
+            return downImage
         }
         
-        return downImage
+        // for up and matched return upImage
+        return upImage
     }
     
     // flip the card over
@@ -52,5 +54,10 @@ class Card {
         } else {
             state = .up
         }
+        // do nothing for state == .matched
+    }
+    
+    func isMatched() -> Bool {
+        return state == .matched
     }
 }

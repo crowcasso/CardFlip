@@ -239,6 +239,8 @@
                         <outlet property="card3_2" destination="cFt-8S-DSa" id="ja4-fq-uyS"/>
                         <outlet property="card3_3" destination="fRv-ia-Qny" id="fQr-we-5Rc"/>
                         <outlet property="flipsLabel" destination="fao-zp-vVu" id="6Sz-hg-krD"/>
+                        <outlet property="messageArea" destination="wmb-Ls-4px" id="FAe-jO-FhU"/>
+                        <outlet property="scoreLabel" destination="dxT-Zl-hNU" id="YD4-YZ-qCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
